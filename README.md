@@ -4,7 +4,7 @@
 
 Lab exercises for the  [course on image processing](https://perso.esiee.fr/~perretb/I5FM/TAI/) (in French).
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ESIEECourses/labs-aprimault)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/aprimault/labs-aprimault-e4-gitpod/)
 
 ## Organization
 
