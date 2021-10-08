@@ -1,7 +1,7 @@
-image: aprimault/gitpod-vnc:latest
+image: aprimault/gitpod-e4-traitement-image:latest
 tasks:
-  - init: export DISPLAY=:0 && /usr/bin/start-vnc-session.sh &> /tmp/display-\${DISPLAY}.log
-    command: echo 'Create display'
+  - init: export DISPLAY=:0 && /usr/bin/start-vnc-session.sh &> /tmp/display-\${DISPLAY}.log && export CONDA_ROOT_PATH="/miniconda" && export PATH="$CONDA_ROOT_PATH/bin:$PATH" && export OPENCV_LIB_DIR=$CONDA_ROOT_PATH/lib && export LD_LIBRARY_PATH=$OPENCV_LIB_DIR:$LD_LIBRARY_PATH && export CPLUS_INCLUDE_PATH=$CONDA_ROOT_PATH/include/opencv4:$CPLUS_INCLUDE_PATH
+    command: echo "Display and path OK"
 ports:
   - port: 6080
     onOpen: open-preview
